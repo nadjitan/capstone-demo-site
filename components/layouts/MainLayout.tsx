@@ -5,7 +5,10 @@ import Navbar from "../Navbar"
 
 const Layout: NextPage<{ children: ReactElement }> = ({ children }) => {
   return (
-    <Surveyor apiUrl={"https://capstone-api-theta.vercel.app/api/telemetry"}>
+    <Surveyor
+      debug={true}
+      apiUrl={"https://capstone-api-theta.vercel.app/api/telemetry"}
+    >
       <Navbar />
       <main>{children}</main>
     </Surveyor>
