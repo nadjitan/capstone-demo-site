@@ -3,7 +3,7 @@ import Link from "next/link"
 
 const Navbar: NextPage = () => {
   return (
-    <nav className="flex items-center justify-between max-w-3xl p-4 mx-auto">
+    <nav className="flex items-center justify-between max-w-6xl p-4 mx-auto">
       <Link href="/">
         <a className="inline-flex items-center justify-center rounded-lg">
           Website Name
