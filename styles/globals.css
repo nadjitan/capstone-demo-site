@@ -8,8 +8,11 @@
   #__next {
     @apply h-full w-full;
   }
+}
 
-  .srvyr-selected {
-    background-color: black;
-  }
+.srvyr-selected {
+  @apply relative before:absolute  before:h-full
+  before:w-full before:border-4
+  before:border-[green] before:bg-[green]/50
+  before:content-[''];
 }
