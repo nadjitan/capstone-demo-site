@@ -3,16 +3,20 @@ import { NextPage } from "next"
 import { ReactElement } from "react"
 import Navbar from "../Navbar"
 
-const Layout: NextPage<{ children: ReactElement }> = ({ children }) => {
+const MainLayout: NextPage<{ children: ReactElement }> = ({ children }) => {
   return (
     <Surveyor
+      logClicks={false}
       debug={true}
-      apiUrl={"https://capstone-api-theta.vercel.app/api/telemetry"}
-    >
+      apiUrl={"https://capstone-api-theta.vercel.app/api/telemetry"}>
       <Navbar />
       <main>{children}</main>
     </Surveyor>
+    // <>
+    //   <Navbar />
+    //   <main>{children}</main>
+    // </>
   )
 }
 
-export default Layout
+export default MainLayout

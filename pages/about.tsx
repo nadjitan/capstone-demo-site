@@ -1,7 +1,14 @@
-import { NextPage } from "next"
+import { initSurveyor } from "@nadjitan/surveyor"
 import Head from "next/head"
+import { ReactElement, useEffect } from "react"
+import MainLayout from "../components/layouts/MainLayout"
+import { NextPageWithLayout } from "./_app"
 
-const About: NextPage = () => {
+const About: NextPageWithLayout = () => {
+  // useEffect(() => {
+  //   initSurveyor("https://capstone-api-theta.vercel.app/api/telemetry")
+  // }, [])
+
   return (
     <>
       <Head>
@@ -9,18 +16,17 @@ const About: NextPage = () => {
       </Head>
       <div className="space-y-4">
         <details className="group" open>
-          <summary className="flex items-center justify-between p-4 rounded-lg cursor-pointer bg-gray-50">
+          <summary className="flex cursor-pointer items-center justify-between rounded-lg bg-gray-50 p-4">
             <h5 className="font-medium text-gray-900">
               Lorem ipsum dolor sit amet consectetur adipisicing?
             </h5>
 
             <svg
-              className="flex-shrink-0 ml-1.5 w-5 h-5 transition duration-300 group-open:-rotate-180"
+              className="ml-1.5 h-5 w-5 flex-shrink-0 transition duration-300 group-open:-rotate-180"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
+              stroke="currentColor">
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -30,7 +36,7 @@ const About: NextPage = () => {
             </svg>
           </summary>
 
-          <p className="px-4 mt-4 leading-relaxed text-gray-700">
+          <p className="mt-4 px-4 leading-relaxed text-gray-700">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
             veritatis molestias culpa in, recusandae laboriosam neque aliquid
             libero nesciunt voluptate dicta quo officiis explicabo consequuntur
@@ -39,18 +45,17 @@ const About: NextPage = () => {
         </details>
 
         <details className="group">
-          <summary className="flex items-center justify-between p-4 rounded-lg cursor-pointer bg-gray-50">
+          <summary className="flex cursor-pointer items-center justify-between rounded-lg bg-gray-50 p-4">
             <h5 className="font-medium text-gray-900">
               Lorem ipsum dolor sit amet consectetur adipisicing?
             </h5>
 
             <svg
-              className="flex-shrink-0 ml-1.5 w-5 h-5 transition duration-300 group-open:-rotate-180"
+              className="ml-1.5 h-5 w-5 flex-shrink-0 transition duration-300 group-open:-rotate-180"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
+              stroke="currentColor">
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -60,7 +65,7 @@ const About: NextPage = () => {
             </svg>
           </summary>
 
-          <p className="px-4 mt-4 leading-relaxed text-gray-700">
+          <p className="mt-4 px-4 leading-relaxed text-gray-700">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
             veritatis molestias culpa in, recusandae laboriosam neque aliquid
             libero nesciunt voluptate dicta quo officiis explicabo consequuntur
@@ -71,5 +76,7 @@ const About: NextPage = () => {
     </>
   )
 }
+
+About.getLayout = (page: ReactElement) => <MainLayout>{page}</MainLayout>
 
 export default About
