@@ -1,9 +1,14 @@
-import type { NextPage } from "next"
+import { initSurveyor } from "@nadjitan/surveyor"
 import Head from "next/head"
-// import Foo from "../components/Foo"
+import { ReactElement, useEffect } from "react"
+import MainLayout from "../components/layouts/MainLayout"
+import { NextPageWithLayout } from "./_app"
 
-const Home: NextPage = () => {
-  const array = ["test", "bar", "tdasd"]
+const Home: NextPageWithLayout = () => {
+  // useEffect(() => {
+  //   initSurveyor("https://capstone-api-theta.vercel.app/api/telemetry")
+  // }, [])
+
   return (
     <>
       <Head>
@@ -28,5 +33,7 @@ const Home: NextPage = () => {
     </>
   )
 }
+
+Home.getLayout = (page: ReactElement) => <MainLayout>{page}</MainLayout>
 
 export default Home
