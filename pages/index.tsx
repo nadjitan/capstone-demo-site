@@ -14,7 +14,7 @@ const Home: NextPageWithLayout = () => {
       <Head>
         <title>Home</title>
       </Head>
-      <h1 className="underline font-bold grid">Hello world!</h1>
+      <h1 className="grid font-bold underline">Hello world!</h1>
       {/* {array.map((item) => (
         <Foo key={item} title={item} />
       ))} */}
