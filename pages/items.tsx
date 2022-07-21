@@ -1,11 +1,11 @@
 import { initSurveyor } from "@nadjitan/surveyor"
 import Head from "next/head"
+import Link from "next/link"
 import { ReactElement, useEffect } from "react"
 import MainLayout from "../components/layouts/MainLayout"
 import { NextPageWithLayout } from "./_app"
 
 const Items: NextPageWithLayout = () => {
-
   return (
     <>
       <div className="my-11 px-4 sm:px-28 xl:px-60">
@@ -34,12 +34,11 @@ const Items: NextPageWithLayout = () => {
                 egestas. Facilisis mauris sit amet massa vitae. Id consectetur
                 purus ut faucibus pulvinar.
               </p>
-              <a
-                href="/cart"
-                className="btn btn-circle mt-4 w-44 gap-4 hover:text-secondary-content"
-              >
-                Add to Cart
-              </a>
+              <Link href="/cart">
+                <div className="btn btn-circle mt-4 w-44 gap-4 hover:text-secondary-content">
+                  Add to Cart
+                </div>
+              </Link>
             </div>
           </div>
         </div>
