@@ -5,15 +5,9 @@ import MainLayout from "../components/layouts/MainLayout"
 import { NextPageWithLayout } from "./_app"
 
 const Items: NextPageWithLayout = () => {
-  // useEffect(() => {
-  //   initSurveyor("https://capstone-api-theta.vercel.app/api/telemetry")
-  // }, [])
 
   return (
     <>
-      <Head>
-        <title>Items</title>
-      </Head>
       <div className="my-11 px-4 sm:px-28 xl:px-60">
         <div className="card card-side w-full rounded-none bg-white">
           <figure>

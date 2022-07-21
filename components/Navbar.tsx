@@ -30,7 +30,7 @@ const Navbar: NextPage = () => {
       <div className="navbar bg-base-100 sm:px-28 xl:px-60">
         <div className="w-0 pr-56">
           <div className="dropdown">
-            <label tabIndex="0" className="btn btn-ghost lg:hidden">
+            <label tabIndex={0} className="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -47,7 +47,7 @@ const Navbar: NextPage = () => {
               </svg>
             </label>
             <ul
-              tabIndex="0"
+              tabIndex={0}
               className="dropdown-content menu menu-compact mt-3 w-52 rounded-none bg-base-100 p-2 shadow"
             >
               <li>
@@ -135,7 +135,7 @@ const Navbar: NextPage = () => {
         <div className="w-0 pr-56">
           <div className="dropdown">
             <label
-              tabIndex="0"
+              tabIndex={0}
               className="btn no-animation m-1 w-52 gap-4 rounded-none hover:text-secondary-content"
             >
               <svg
@@ -149,7 +149,7 @@ const Navbar: NextPage = () => {
               All Categories
             </label>
             <ul
-              tabIndex="0"
+              tabIndex={0}
               className="dropdown-content menu w-52 rounded-none bg-base-100 p-2 shadow"
             >
               <li>

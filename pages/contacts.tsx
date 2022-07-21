@@ -5,9 +5,6 @@ import MainLayout from "../components/layouts/MainLayout"
 import { NextPageWithLayout } from "./_app"
 
 const Contacts: NextPageWithLayout = () => {
-  // useEffect(() => {
-  //   initSurveyor("https://capstone-api-theta.vercel.app/api/telemetry")
-  // }, [])
 
   return (
     <>
