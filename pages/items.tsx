@@ -35,9 +35,9 @@ const Items: NextPageWithLayout = () => {
                 purus ut faucibus pulvinar.
               </p>
               <Link href="/cart">
-                <div className="btn btn-circle mt-4 w-44 gap-4 hover:text-secondary-content">
+                <a className="btn btn-circle mt-4 w-44 gap-4 hover:text-secondary-content">
                   Add to Cart
-                </div>
+                </a>
               </Link>
             </div>
           </div>

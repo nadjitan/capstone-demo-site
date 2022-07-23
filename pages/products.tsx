@@ -19,7 +19,7 @@ const Products: NextPageWithLayout = () => {
         </div>
         <div className="mb-11 flex justify-between">
           <Link href="/items">
-            <div className="card card-compact w-auto rounded-none bg-base-100 shadow-xl">
+            <a className="card card-compact w-auto rounded-none bg-base-100 shadow-xl">
               <figure>
                 <img src="/product-image-placeholder.png" alt="product" />
               </figure>
@@ -27,10 +27,10 @@ const Products: NextPageWithLayout = () => {
                 <h3>Product name</h3>
                 <h2>P 99.99</h2>
               </div>
-            </div>
+            </a>
           </Link>
           <Link href="/items">
-            <div className="card card-compact w-auto rounded-none bg-base-100 shadow-xl">
+            <a className="card card-compact w-auto rounded-none bg-base-100 shadow-xl">
               <figure>
                 <img src="/product-image-placeholder.png" alt="product" />
               </figure>
@@ -38,10 +38,10 @@ const Products: NextPageWithLayout = () => {
                 <h3>Product name</h3>
                 <h2>P 99.99</h2>
               </div>
-            </div>
+            </a>
           </Link>
           <Link href="/items">
-            <div className="card card-compact w-auto rounded-none bg-base-100 shadow-xl">
+            <a className="card card-compact w-auto rounded-none bg-base-100 shadow-xl">
               <figure>
                 <img src="/product-image-placeholder.png" alt="product" />
               </figure>
@@ -49,10 +49,10 @@ const Products: NextPageWithLayout = () => {
                 <h3>Product name</h3>
                 <h2>P 99.99</h2>
               </div>
-            </div>
+            </a>
           </Link>
           <Link href="/items">
-            <div className="card card-compact w-auto rounded-none bg-base-100 shadow-xl">
+            <a className="card card-compact w-auto rounded-none bg-base-100 shadow-xl">
               <figure>
                 <img src="/product-image-placeholder.png" alt="product" />
               </figure>
@@ -60,10 +60,10 @@ const Products: NextPageWithLayout = () => {
                 <h3>Product name</h3>
                 <h2>P 99.99</h2>
               </div>
-            </div>
+            </a>
           </Link>
           <Link href="/items">
-            <div className="card card-compact w-auto rounded-none bg-base-100 shadow-xl">
+            <a className="card card-compact w-auto rounded-none bg-base-100 shadow-xl">
               <figure>
                 <img src="/product-image-placeholder.png" alt="product" />
               </figure>
@@ -71,69 +71,12 @@ const Products: NextPageWithLayout = () => {
                 <h3>Product name</h3>
                 <h2>P 99.99</h2>
               </div>
-            </div>
-          </Link>
-        </div>
-        <div className="mb-11 flex justify-between">
-          <Link href="/items">
-            <div className="card card-compact w-auto rounded-none bg-base-100 shadow-xl">
-              <figure>
-                <img src="/product-image-placeholder.png" alt="product" />
-              </figure>
-              <div className="card-body">
-                <h3>Product name</h3>
-                <h2>P 99.99</h2>
-              </div>
-            </div>
-          </Link>
-          <Link href="/items">
-            <div className="card card-compact w-auto rounded-none bg-base-100 shadow-xl">
-              <figure>
-                <img src="/product-image-placeholder.png" alt="product" />
-              </figure>
-              <div className="card-body">
-                <h3>Product name</h3>
-                <h2>P 99.99</h2>
-              </div>
-            </div>
-          </Link>
-          <Link href="/items">
-            <div className="card card-compact w-auto rounded-none bg-base-100 shadow-xl">
-              <figure>
-                <img src="/product-image-placeholder.png" alt="product" />
-              </figure>
-              <div className="card-body">
-                <h3>Product name</h3>
-                <h2>P 99.99</h2>
-              </div>
-            </div>
-          </Link>
-          <Link href="/items">
-            <div className="card card-compact w-auto rounded-none bg-base-100 shadow-xl">
-              <figure>
-                <img src="/product-image-placeholder.png" alt="product" />
-              </figure>
-              <div className="card-body">
-                <h3>Product name</h3>
-                <h2>P 99.99</h2>
-              </div>
-            </div>
-          </Link>
-          <Link href="/items">
-            <div className="card card-compact w-auto rounded-none bg-base-100 shadow-xl">
-              <figure>
-                <img src="/product-image-placeholder.png" alt="product" />
-              </figure>
-              <div className="card-body">
-                <h3>Product name</h3>
-                <h2>P 99.99</h2>
-              </div>
-            </div>
+            </a>
           </Link>
         </div>
         <div className="mb-11 flex justify-between">
           <Link href="/items">
-            <div className="card card-compact w-auto rounded-none bg-base-100 shadow-xl">
+            <a className="card card-compact w-auto rounded-none bg-base-100 shadow-xl">
               <figure>
                 <img src="/product-image-placeholder.png" alt="product" />
               </figure>
@@ -141,10 +84,10 @@ const Products: NextPageWithLayout = () => {
                 <h3>Product name</h3>
                 <h2>P 99.99</h2>
               </div>
-            </div>
+            </a>
           </Link>
           <Link href="/items">
-            <div className="card card-compact w-auto rounded-none bg-base-100 shadow-xl">
+            <a className="card card-compact w-auto rounded-none bg-base-100 shadow-xl">
               <figure>
                 <img src="/product-image-placeholder.png" alt="product" />
               </figure>
@@ -152,10 +95,10 @@ const Products: NextPageWithLayout = () => {
                 <h3>Product name</h3>
                 <h2>P 99.99</h2>
               </div>
-            </div>
+            </a>
           </Link>
           <Link href="/items">
-            <div className="card card-compact w-auto rounded-none bg-base-100 shadow-xl">
+            <a className="card card-compact w-auto rounded-none bg-base-100 shadow-xl">
               <figure>
                 <img src="/product-image-placeholder.png" alt="product" />
               </figure>
@@ -163,10 +106,10 @@ const Products: NextPageWithLayout = () => {
                 <h3>Product name</h3>
                 <h2>P 99.99</h2>
               </div>
-            </div>
+            </a>
           </Link>
           <Link href="/items">
-            <div className="card card-compact w-auto rounded-none bg-base-100 shadow-xl">
+            <a className="card card-compact w-auto rounded-none bg-base-100 shadow-xl">
               <figure>
                 <img src="/product-image-placeholder.png" alt="product" />
               </figure>
@@ -174,10 +117,10 @@ const Products: NextPageWithLayout = () => {
                 <h3>Product name</h3>
                 <h2>P 99.99</h2>
               </div>
-            </div>
+            </a>
           </Link>
           <Link href="/items">
-            <div className="card card-compact w-auto rounded-none bg-base-100 shadow-xl">
+            <a className="card card-compact w-auto rounded-none bg-base-100 shadow-xl">
               <figure>
                 <img src="/product-image-placeholder.png" alt="product" />
               </figure>
@@ -185,7 +128,64 @@ const Products: NextPageWithLayout = () => {
                 <h3>Product name</h3>
                 <h2>P 99.99</h2>
               </div>
-            </div>
+            </a>
+          </Link>
+        </div>
+        <div className="mb-11 flex justify-between">
+          <Link href="/items">
+            <a className="card card-compact w-auto rounded-none bg-base-100 shadow-xl">
+              <figure>
+                <img src="/product-image-placeholder.png" alt="product" />
+              </figure>
+              <div className="card-body">
+                <h3>Product name</h3>
+                <h2>P 99.99</h2>
+              </div>
+            </a>
+          </Link>
+          <Link href="/items">
+            <a className="card card-compact w-auto rounded-none bg-base-100 shadow-xl">
+              <figure>
+                <img src="/product-image-placeholder.png" alt="product" />
+              </figure>
+              <div className="card-body">
+                <h3>Product name</h3>
+                <h2>P 99.99</h2>
+              </div>
+            </a>
+          </Link>
+          <Link href="/items">
+            <a className="card card-compact w-auto rounded-none bg-base-100 shadow-xl">
+              <figure>
+                <img src="/product-image-placeholder.png" alt="product" />
+              </figure>
+              <div className="card-body">
+                <h3>Product name</h3>
+                <h2>P 99.99</h2>
+              </div>
+            </a>
+          </Link>
+          <Link href="/items">
+            <a className="card card-compact w-auto rounded-none bg-base-100 shadow-xl">
+              <figure>
+                <img src="/product-image-placeholder.png" alt="product" />
+              </figure>
+              <div className="card-body">
+                <h3>Product name</h3>
+                <h2>P 99.99</h2>
+              </div>
+            </a>
+          </Link>
+          <Link href="/items">
+            <a className="card card-compact w-auto rounded-none bg-base-100 shadow-xl">
+              <figure>
+                <img src="/product-image-placeholder.png" alt="product" />
+              </figure>
+              <div className="card-body">
+                <h3>Product name</h3>
+                <h2>P 99.99</h2>
+              </div>
+            </a>
           </Link>
         </div>
       </div>

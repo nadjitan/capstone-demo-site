@@ -63,36 +63,36 @@ const Navbar: NextPage = () => {
             </ul>
           </div>
           <Link href="/">
-            <div className="btn btn-primary text-xl normal-case hover:text-neutral-content">
+            <a className="btn btn-primary text-xl normal-case hover:text-neutral-content">
               DEMO STORE
-            </div>
+            </a>
           </Link>
         </div>
         <div className="navbar hidden lg:flex">
           <Link href="/">
-            <div className="btn btn-primary hover:text-neutral-content">
+            <a className="btn btn-primary hover:text-neutral-content">
               Home
-            </div>
+            </a>
           </Link>
           <Link href="/products">
-            <div className="btn btn-primary hover:text-neutral-content">
+            <a className="btn btn-primary hover:text-neutral-content">
               Products
-            </div>
+            </a>
           </Link>
-          <Link href="/products">
-            <div className="btn btn-primary hover:text-neutral-content">
+          <Link href="/about">
+            <a className="btn btn-primary hover:text-neutral-content">
               About
-            </div>
+            </a>
           </Link>
           <Link href="/contacts">
-            <div className="btn btn-primary hover:text-neutral-content">
+            <a className="btn btn-primary hover:text-neutral-content">
               Contact us
-            </div>
+            </a>
           </Link>
         </div>
         <div className="navbar-end">
           <Link href="/cart">
-            <div className="btn btn-primary mr-2 w-32 gap-4 hover:text-neutral-content">
+            <a className="btn btn-primary mr-2 w-32 gap-4 hover:text-neutral-content">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6"
@@ -103,10 +103,10 @@ const Navbar: NextPage = () => {
                 <circle cx="17" cy="22" r="2" />
               </svg>
               Cart
-            </div>
+            </a>
           </Link>
           <Link href="/login">
-            <div className="btn btn-circle w-44 gap-4 hover:text-secondary-content">
+            <a className="btn btn-circle w-44 gap-4 hover:text-secondary-content">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -115,7 +115,7 @@ const Navbar: NextPage = () => {
                 <path d="M10,11.25A5.625,5.625,0,1,0,4.375,5.625,5.626,5.626,0,0,0,10,11.25Zm5,1.25H12.848a6.8,6.8,0,0,1-5.7,0H5a5,5,0,0,0-5,5v.625A1.875,1.875,0,0,0,1.875,20h16.25A1.875,1.875,0,0,0,20,18.125V17.5A5,5,0,0,0,15,12.5Z" />
               </svg>
               My Account
-            </div>
+            </a>
           </Link>
         </div>
       </div>
