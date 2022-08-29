@@ -2,7 +2,7 @@ import { initSurveyor } from "@nadjitan/surveyor"
 import Head from "next/head"
 import Link from "next/link"
 import { ReactElement, useEffect } from "react"
-import MainLayout from "../components/layouts/MainLayout"
+import MainLayout from "../components/layouts/main-layout"
 import { NextPageWithLayout } from "./_app"
 
 const Products: NextPageWithLayout = () => {
@@ -11,13 +11,13 @@ const Products: NextPageWithLayout = () => {
       <Head>
         <title>Products</title>
       </Head>
-      <div className="px-4 sm:px-28 xl:px-60">
+      <div className="h-full px-4 sm:px-28 xl:px-60">
         <div className="background my-11">
           <h1 className="flex items-center text-lg font-medium uppercase">
             Products List
           </h1>
         </div>
-        <div className="mb-11 flex justify-between">
+        <div className="mb-11 flex h-full w-full flex-row justify-between">
           <Link href="/items">
             <a className="card card-compact w-auto rounded-none bg-base-100 shadow-xl">
               <figure>
