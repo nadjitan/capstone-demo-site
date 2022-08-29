@@ -1,210 +1,192 @@
 import { initSurveyor } from "@nadjitan/surveyor"
 import Head from "next/head"
+import Link from "next/link"
 import { ReactElement, useEffect } from "react"
-import MainLayout from "../components/layouts/MainLayout"
+import MainLayout from "../components/layouts/main-layout"
 import { NextPageWithLayout } from "./_app"
 
 const Products: NextPageWithLayout = () => {
-  // useEffect(() => {
-  //   initSurveyor("https://capstone-api-theta.vercel.app/api/telemetry")
-  // }, [])
-
   return (
     <>
       <Head>
         <title>Products</title>
       </Head>
-      <div className="px-4 sm:px-28 xl:px-60">
+      <div className="h-full px-4 sm:px-28 xl:px-60">
         <div className="background my-11">
           <h1 className="flex items-center text-lg font-medium uppercase">
             Products List
           </h1>
         </div>
-        <div className="mb-11 flex justify-between">
-          <a
-            href="/items"
-            className="card-compact card w-auto rounded-none bg-base-100 shadow-xl"
-          >
-            <figure>
-              <img src="/product-image-placeholder.png" alt="product" />
-            </figure>
-            <div className="card-body">
-              <h3>Product name</h3>
-              <h2>P 99.99</h2>
-            </div>
-          </a>
-          <a
-            href="/items"
-            className="card-compact card w-auto rounded-none bg-base-100 shadow-xl"
-          >
-            <figure>
-              <img src="/product-image-placeholder.png" alt="product" />
-            </figure>
-            <div className="card-body">
-              <h3>Product name</h3>
-              <h2>P 99.99</h2>
-            </div>
-          </a>
-          <a
-            href="/items"
-            className="card-compact card w-auto rounded-none bg-base-100 shadow-xl"
-          >
-            <figure>
-              <img src="/product-image-placeholder.png" alt="product" />
-            </figure>
-            <div className="card-body">
-              <h3>Product name</h3>
-              <h2>P 99.99</h2>
-            </div>
-          </a>
-          <a
-            href="/items"
-            className="card-compact card w-auto rounded-none bg-base-100 shadow-xl"
-          >
-            <figure>
-              <img src="/product-image-placeholder.png" alt="product" />
-            </figure>
-            <div className="card-body">
-              <h3>Product name</h3>
-              <h2>P 99.99</h2>
-            </div>
-          </a>
-          <a
-            href="/items"
-            className="card-compact card w-auto rounded-none bg-base-100 shadow-xl"
-          >
-            <figure>
-              <img src="/product-image-placeholder.png" alt="product" />
-            </figure>
-            <div className="card-body">
-              <h3>Product name</h3>
-              <h2>P 99.99</h2>
-            </div>
-          </a>
+        <div className="mb-11 flex h-full w-full flex-row justify-between">
+          <Link href="/items">
+            <a className="card card-compact w-auto rounded-none bg-base-100 shadow-xl">
+              <figure>
+                <img src="/product-image-placeholder.png" alt="product" />
+              </figure>
+              <div className="card-body">
+                <h3>Product name</h3>
+                <h2>P 99.99</h2>
+              </div>
+            </a>
+          </Link>
+          <Link href="/items">
+            <a className="card card-compact w-auto rounded-none bg-base-100 shadow-xl">
+              <figure>
+                <img src="/product-image-placeholder.png" alt="product" />
+              </figure>
+              <div className="card-body">
+                <h3>Product name</h3>
+                <h2>P 99.99</h2>
+              </div>
+            </a>
+          </Link>
+          <Link href="/items">
+            <a className="card card-compact w-auto rounded-none bg-base-100 shadow-xl">
+              <figure>
+                <img src="/product-image-placeholder.png" alt="product" />
+              </figure>
+              <div className="card-body">
+                <h3>Product name</h3>
+                <h2>P 99.99</h2>
+              </div>
+            </a>
+          </Link>
+          <Link href="/items">
+            <a className="card card-compact w-auto rounded-none bg-base-100 shadow-xl">
+              <figure>
+                <img src="/product-image-placeholder.png" alt="product" />
+              </figure>
+              <div className="card-body">
+                <h3>Product name</h3>
+                <h2>P 99.99</h2>
+              </div>
+            </a>
+          </Link>
+          <Link href="/items">
+            <a className="card card-compact w-auto rounded-none bg-base-100 shadow-xl">
+              <figure>
+                <img src="/product-image-placeholder.png" alt="product" />
+              </figure>
+              <div className="card-body">
+                <h3>Product name</h3>
+                <h2>P 99.99</h2>
+              </div>
+            </a>
+          </Link>
         </div>
         <div className="mb-11 flex justify-between">
-          <a
-            href="/items"
-            className="card-compact card w-auto rounded-none bg-base-100 shadow-xl"
-          >
-            <figure>
-              <img src="/product-image-placeholder.png" alt="product" />
-            </figure>
-            <div className="card-body">
-              <h3>Product name</h3>
-              <h2>P 99.99</h2>
-            </div>
-          </a>
-          <a
-            href="/items"
-            className="card-compact card w-auto rounded-none bg-base-100 shadow-xl"
-          >
-            <figure>
-              <img src="/product-image-placeholder.png" alt="product" />
-            </figure>
-            <div className="card-body">
-              <h3>Product name</h3>
-              <h2>P 99.99</h2>
-            </div>
-          </a>
-          <a
-            href="/items"
-            className="card-compact card w-auto rounded-none bg-base-100 shadow-xl"
-          >
-            <figure>
-              <img src="/product-image-placeholder.png" alt="product" />
-            </figure>
-            <div className="card-body">
-              <h3>Product name</h3>
-              <h2>P 99.99</h2>
-            </div>
-          </a>
-          <a
-            href="/items"
-            className="card-compact card w-auto rounded-none bg-base-100 shadow-xl"
-          >
-            <figure>
-              <img src="/product-image-placeholder.png" alt="product" />
-            </figure>
-            <div className="card-body">
-              <h3>Product name</h3>
-              <h2>P 99.99</h2>
-            </div>
-          </a>
-          <a
-            href="/items"
-            className="card-compact card w-auto rounded-none bg-base-100 shadow-xl"
-          >
-            <figure>
-              <img src="/product-image-placeholder.png" alt="product" />
-            </figure>
-            <div className="card-body">
-              <h3>Product name</h3>
-              <h2>P 99.99</h2>
-            </div>
-          </a>
+          <Link href="/items">
+            <a className="card card-compact w-auto rounded-none bg-base-100 shadow-xl">
+              <figure>
+                <img src="/product-image-placeholder.png" alt="product" />
+              </figure>
+              <div className="card-body">
+                <h3>Product name</h3>
+                <h2>P 99.99</h2>
+              </div>
+            </a>
+          </Link>
+          <Link href="/items">
+            <a className="card card-compact w-auto rounded-none bg-base-100 shadow-xl">
+              <figure>
+                <img src="/product-image-placeholder.png" alt="product" />
+              </figure>
+              <div className="card-body">
+                <h3>Product name</h3>
+                <h2>P 99.99</h2>
+              </div>
+            </a>
+          </Link>
+          <Link href="/items">
+            <a className="card card-compact w-auto rounded-none bg-base-100 shadow-xl">
+              <figure>
+                <img src="/product-image-placeholder.png" alt="product" />
+              </figure>
+              <div className="card-body">
+                <h3>Product name</h3>
+                <h2>P 99.99</h2>
+              </div>
+            </a>
+          </Link>
+          <Link href="/items">
+            <a className="card card-compact w-auto rounded-none bg-base-100 shadow-xl">
+              <figure>
+                <img src="/product-image-placeholder.png" alt="product" />
+              </figure>
+              <div className="card-body">
+                <h3>Product name</h3>
+                <h2>P 99.99</h2>
+              </div>
+            </a>
+          </Link>
+          <Link href="/items">
+            <a className="card card-compact w-auto rounded-none bg-base-100 shadow-xl">
+              <figure>
+                <img src="/product-image-placeholder.png" alt="product" />
+              </figure>
+              <div className="card-body">
+                <h3>Product name</h3>
+                <h2>P 99.99</h2>
+              </div>
+            </a>
+          </Link>
         </div>
         <div className="mb-11 flex justify-between">
-          <a
-            href="/items"
-            className="card-compact card w-auto rounded-none bg-base-100 shadow-xl"
-          >
-            <figure>
-              <img src="/product-image-placeholder.png" alt="product" />
-            </figure>
-            <div className="card-body">
-              <h3>Product name</h3>
-              <h2>P 99.99</h2>
-            </div>
-          </a>
-          <a
-            href="/items"
-            className="card-compact card w-auto rounded-none bg-base-100 shadow-xl"
-          >
-            <figure>
-              <img src="/product-image-placeholder.png" alt="product" />
-            </figure>
-            <div className="card-body">
-              <h3>Product name</h3>
-              <h2>P 99.99</h2>
-            </div>
-          </a>
-          <a
-            href="/items"
-            className="card-compact card w-auto rounded-none bg-base-100 shadow-xl"
-          >
-            <figure>
-              <img src="/product-image-placeholder.png" alt="product" />
-            </figure>
-            <div className="card-body">
-              <h3>Product name</h3>
-              <h2>P 99.99</h2>
-            </div>
-          </a>
-          <a
-            href="/items"
-            className="card-compact card w-auto rounded-none bg-base-100 shadow-xl"
-          >
-            <figure>
-              <img src="/product-image-placeholder.png" alt="product" />
-            </figure>
-            <div className="card-body">
-              <h3>Product name</h3>
-              <h2>P 99.99</h2>
-            </div>
-          </a>
-          <a
-            href="/items"
-            className="card-compact card w-auto rounded-none bg-base-100 shadow-xl"
-          >
-            <figure>
-              <img src="/product-image-placeholder.png" alt="product" />
-            </figure>
-            <div className="card-body">
-              <h3>Product name</h3>
-              <h2>P 99.99</h2>
-            </div>
-          </a>
+          <Link href="/items">
+            <a className="card card-compact w-auto rounded-none bg-base-100 shadow-xl">
+              <figure>
+                <img src="/product-image-placeholder.png" alt="product" />
+              </figure>
+              <div className="card-body">
+                <h3>Product name</h3>
+                <h2>P 99.99</h2>
+              </div>
+            </a>
+          </Link>
+          <Link href="/items">
+            <a className="card card-compact w-auto rounded-none bg-base-100 shadow-xl">
+              <figure>
+                <img src="/product-image-placeholder.png" alt="product" />
+              </figure>
+              <div className="card-body">
+                <h3>Product name</h3>
+                <h2>P 99.99</h2>
+              </div>
+            </a>
+          </Link>
+          <Link href="/items">
+            <a className="card card-compact w-auto rounded-none bg-base-100 shadow-xl">
+              <figure>
+                <img src="/product-image-placeholder.png" alt="product" />
+              </figure>
+              <div className="card-body">
+                <h3>Product name</h3>
+                <h2>P 99.99</h2>
+              </div>
+            </a>
+          </Link>
+          <Link href="/items">
+            <a className="card card-compact w-auto rounded-none bg-base-100 shadow-xl">
+              <figure>
+                <img src="/product-image-placeholder.png" alt="product" />
+              </figure>
+              <div className="card-body">
+                <h3>Product name</h3>
+                <h2>P 99.99</h2>
+              </div>
+            </a>
+          </Link>
+          <Link href="/items">
+            <a className="card card-compact w-auto rounded-none bg-base-100 shadow-xl">
+              <figure>
+                <img src="/product-image-placeholder.png" alt="product" />
+              </figure>
+              <div className="card-body">
+                <h3>Product name</h3>
+                <h2>P 99.99</h2>
+              </div>
+            </a>
+          </Link>
         </div>
       </div>
     </>
