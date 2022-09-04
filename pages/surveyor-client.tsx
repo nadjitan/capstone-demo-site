@@ -14,7 +14,6 @@ const SurveyorClient: NextPage = () => {
   return (
     <Client
       apiUrl={"https://capstone-api-theta.vercel.app/api/surveyor"}
-      loadIframe={true}
     />
   )
 }
