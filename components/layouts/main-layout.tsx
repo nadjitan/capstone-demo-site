@@ -4,8 +4,7 @@ import { ComponentProps, ReactElement } from "react"
 
 import { Surveyor as Surveyortype } from "@nadjitan/surveyor"
 import "@nadjitan/surveyor/dist/style.css"
-import Navbar from "../navbar"
-
+import Navbar from "../Navbar"
 
 const Surveyor = dynamic<ComponentProps<typeof Surveyortype>>(
   () => import("@nadjitan/surveyor").then(mod => mod.Surveyor),
