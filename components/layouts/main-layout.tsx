@@ -17,9 +17,8 @@ const MainLayout: NextPage<{ children: ReactElement }> = ({ children }) => {
   useEffect(() => {
     if (
       window.parent.location.href !==
-        "https://capstone-demo-site.vercel.app/surveyor-client" &&
-      window.location.href !==
-        "https://capstone-demo-site.vercel.app/surveyor-client"
+        `${window.parent.location.origin}/surveyor-client` ||
+      window.location.href !== `${window.location.origin}/surveyor-client`
     ) {
       setRecord(true)
     } else {
@@ -35,7 +34,7 @@ const MainLayout: NextPage<{ children: ReactElement }> = ({ children }) => {
       }}
       logClicks={record}
       locateMsg={"Sign in your account"}
-      debug={true}
+      debug={!record}
       apiUrl={"https://capstone-api-theta.vercel.app/api/telemetry"}>
       <Navbar />
       {children}
