@@ -35,7 +35,7 @@ const MainLayout: NextPage<{ children: ReactElement }> = ({ children }) => {
       }}
       logClicks={record}
       locateMsg={"Sign in your account"}
-      debug={!record}
+      debug={true}
       apiUrl={"https://capstone-api-theta.vercel.app/api/telemetry"}>
       <Navbar />
       {children}
