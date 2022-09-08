@@ -12,9 +12,20 @@ const Surveyor = dynamic<ComponentProps<typeof Surveyortype>>(
 )
 
 const MainLayout: NextPage<{ children: ReactElement }> = ({ children }) => {
-  const [url, setUrl] = useState<string>()
+  const [log, setLog] = useState(false)
 
-  useEffect(() => setUrl(window.location.href), [children])
+  useEffect(() => {
+    if (
+      window.parent.location.href !==
+        "https://capstone-demo-site.vercel.app/surveyor-client" &&
+      window.location.href !==
+        "https://capstone-demo-site.vercel.app/surveyor-client"
+    ) {
+      setLog(true)
+    } else {
+      setLog(false)
+    }
+  }, [children])
 
   return (
     <Surveyor
@@ -22,11 +33,7 @@ const MainLayout: NextPage<{ children: ReactElement }> = ({ children }) => {
         url: "https://capstone-demo-site.vercel.app/login",
         class: "srvyr-JvPMMKP4",
       }}
-      logClicks={
-        url !== "https://capstone-demo-site.vercel.app/surveyor-client"
-          ? true
-          : false
-      }
+      logClicks={log}
       locateMsg={"Sign in your account"}
       debug={true}
       apiUrl={"https://capstone-api-theta.vercel.app/api/telemetry"}>
