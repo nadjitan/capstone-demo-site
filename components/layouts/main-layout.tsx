@@ -13,6 +13,9 @@ const Surveyor = dynamic<ComponentProps<typeof Surveyortype>>(
 
 const MainLayout: NextPage<{ children: ReactElement }> = ({ children }) => {
   const [record, setRecord] = useState(false)
+  const [host, setHost] = useState("")
+
+  useEffect(() => setHost(window.location.origin), [])
 
   useEffect(() => {
     if (
@@ -29,7 +32,7 @@ const MainLayout: NextPage<{ children: ReactElement }> = ({ children }) => {
   return (
     <Surveyor
       lastData={{
-        url: "http://localhost:3000/login",
+        url: `${host}/login`,
         class: "srvyr-AYj8YOXp",
       }}
       logClicks={record}
