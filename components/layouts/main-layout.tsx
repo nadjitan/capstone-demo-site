@@ -17,7 +17,7 @@ const MainLayout: NextPage<{ children: ReactElement }> = ({ children }) => {
   useEffect(() => {
     if (
       window.parent.location.href !==
-        `${window.parent.location.origin}/surveyor-client` ||
+        `${window.parent.location.origin}/surveyor-client` &&
       window.location.href !== `${window.location.origin}/surveyor-client`
     ) {
       setRecord(true)
@@ -29,8 +29,8 @@ const MainLayout: NextPage<{ children: ReactElement }> = ({ children }) => {
   return (
     <Surveyor
       lastData={{
-        url: "https://capstone-demo-site.vercel.app/login",
-        class: "srvyr-JvPMMKP4",
+        url: "http://localhost:3000/login",
+        class: "srvyr-AYj8YOXp",
       }}
       logClicks={record}
       locateMsg={"Sign in your account"}
