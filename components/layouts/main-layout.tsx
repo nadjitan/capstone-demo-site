@@ -3,12 +3,11 @@ import dynamic from "next/dynamic"
 import { ComponentProps, ReactElement } from "react"
 
 import { Surveyor as Surveyortype } from "@nadjitan/surveyor"
-import "@nadjitan/surveyor/dist/style.css"
-import Navbar from "../navbar"
-
+//import "@nadjitan/surveyor/dist/style.css"
+import Navbar from "../Navbar"
 
 const Surveyor = dynamic<ComponentProps<typeof Surveyortype>>(
-  () => import("@nadjitan/surveyor").then(mod => mod.Surveyor),
+  () => import("@nadjitan/surveyor").then((mod) => mod.Surveyor),
   { ssr: false }
 )
 
@@ -19,7 +18,8 @@ const MainLayout: NextPage<{ children: ReactElement }> = ({ children }) => {
       logClicks={false}
       locateMsg={"Login page"}
       debug={true}
-      apiUrl={"https://capstone-api-theta.vercel.app/api/telemetry"}>
+      apiUrl={"https://capstone-api-theta.vercel.app/api/telemetry"}
+    >
       <Navbar />
       {children}
     </Surveyor>
