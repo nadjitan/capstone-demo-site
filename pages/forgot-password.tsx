@@ -5,15 +5,17 @@ import { ReactElement, useEffect } from "react"
 import MainLayout from "../components/layouts/main-layout"
 import { NextPageWithLayout } from "./_app"
 
-const Login: NextPageWithLayout = () => {
+const ForgotPassword: NextPageWithLayout = () => {
   return (
     <>
       <Head>
-        <title>Login</title>
+        <title>Forgot Password</title>
       </Head>
       <div className="flex w-full justify-center">
         <div className="whitebg my-11 w-full p-8 sm:w-1/2 xl:w-1/3">
-          <h1 className="mb-4 text-lg font-medium uppercase">Login</h1>
+          <h1 className="mb-4 text-lg font-medium uppercase">
+            Forgot Password
+          </h1>
           <div className="form-control w-full">
             <label className="label">
               <span className="label-text">Email</span>
@@ -23,14 +25,6 @@ const Login: NextPageWithLayout = () => {
               placeholder="Email"
               className="input input-bordered mb-4 w-full"
             />
-            <label className="label">
-              <span className="label-text">Password</span>
-            </label>
-            <input
-              type="password"
-              placeholder="Password"
-              className="input input-bordered mb-4 w-full"
-            />
             <div className="flex w-full justify-end">
               <button className="btn w-full hover:text-secondary-content">
                 Submit
@@ -38,16 +32,9 @@ const Login: NextPageWithLayout = () => {
             </div>
           </div>
           <div className="mt-4 flex w-full justify-center">
-            <Link href="/register">
+            <Link href="/login">
               <a className="link link-hover text-neutral-content">
-                New member? Register here!
-              </a>
-            </Link>
-          </div>
-          <div className="flex w-full justify-center">
-            <Link href="/forgot-password">
-              <a className="link link-hover text-neutral-content">
-                Forgot Password?
+                Back to login
               </a>
             </Link>
           </div>
@@ -57,6 +44,8 @@ const Login: NextPageWithLayout = () => {
   )
 }
 
-Login.getLayout = (page: ReactElement) => <MainLayout>{page}</MainLayout>
+ForgotPassword.getLayout = (page: ReactElement) => (
+  <MainLayout>{page}</MainLayout>
+)
 
-export default Login
+export default ForgotPassword
