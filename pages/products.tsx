@@ -14,7 +14,7 @@ const Products: NextPageWithLayout = () => {
       <div className="my-11 sm:px-28 xl:px-60">
         <div className="whitebg my-11 p-8">
           <div className="mb-11">
-            <h1 className="flex items-center text-lg font-medium uppercase">
+            <h1 className="flex items-center text-lg font-medium uppercase text-black">
               Products List
             </h1>
           </div>
@@ -32,8 +32,8 @@ const Products: NextPageWithLayout = () => {
                         />
                       </figure>
                       <div className="card-body">
-                        <h3>Product name</h3>
-                        <h2>P 99.99</h2>
+                        <h3 className="text-black">Product name</h3>
+                        <h2 className="text-black">P 99.99</h2>
                       </div>
                     </a>
                   </Link>

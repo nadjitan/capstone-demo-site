@@ -13,7 +13,9 @@ const Login: NextPageWithLayout = () => {
       </Head>
       <div className="flex w-full justify-center">
         <div className="whitebg my-11 w-full p-8 sm:w-1/2 xl:w-1/3">
-          <h1 className="mb-4 text-lg font-medium uppercase">Login</h1>
+          <h1 className="mb-4 text-lg font-medium uppercase text-black">
+            Login
+          </h1>
           <div className="form-control w-full">
             <label className="label">
               <span className="label-text">Email</span>

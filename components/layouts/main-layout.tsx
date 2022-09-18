@@ -7,7 +7,7 @@ import "@nadjitan/surveyor/dist/style.css"
 import Navbar from "../Navbar"
 
 const Surveyor = dynamic<ComponentProps<typeof Surveyortype>>(
-  () => import("@nadjitan/surveyor").then((mod) => mod.Surveyor),
+  () => import("@nadjitan/surveyor").then(mod => mod.Surveyor),
   { ssr: false }
 )
 
@@ -33,10 +33,10 @@ const MainLayout: NextPage<{ children: ReactElement }> = ({ children }) => {
     <Surveyor
       lastData={{
         url: `${host}/login`,
-        class: "srvyr-AYj8YOXp",
+        class: "srvyr-2W3k7K3O",
       }}
       logClicks={record}
-      locateMsg={"Sign in your account"}
+      locateMsg={"Fill out form for signing in."}
       debug={!record}
       apiUrl={"https://capstone-api-theta.vercel.app/api/telemetry"}>
       <Navbar />

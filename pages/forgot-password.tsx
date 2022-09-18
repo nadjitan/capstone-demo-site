@@ -8,12 +8,10 @@ import { NextPageWithLayout } from "./_app"
 const ForgotPassword: NextPageWithLayout = () => {
   return (
     <>
-      <Head>
-        <title>Forgot Password</title>
-      </Head>
+      <Head>Forgot Password</Head>
       <div className="flex w-full justify-center">
         <div className="whitebg my-11 w-full p-8 sm:w-1/2 xl:w-1/3">
-          <h1 className="mb-4 text-lg font-medium uppercase">
+          <h1 className="mb-4 text-lg font-medium uppercase text-black">
             Forgot Password
           </h1>
           <div className="form-control w-full">

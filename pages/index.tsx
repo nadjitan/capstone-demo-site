@@ -19,7 +19,7 @@ const Home: NextPageWithLayout = () => {
       <div className="whitebg px-4 sm:px-28 xl:px-60">
         <div className="pt-11">
           <div className="background mb-11 flex justify-between align-middle">
-            <h1 className="flex items-center text-lg font-medium uppercase">
+            <h1 className="flex items-center text-lg font-medium uppercase text-black">
               HOTTEST PRODUCTS
             </h1>
             <Link href="/products">
@@ -42,8 +42,8 @@ const Home: NextPageWithLayout = () => {
                         />
                       </figure>
                       <div className="card-body">
-                        <h3>Product name</h3>
-                        <h2>P 99.99</h2>
+                        <h3 className="text-black">Product name</h3>
+                        <h2 className="text-black">P 99.99</h2>
                       </div>
                     </a>
                   </Link>
@@ -55,7 +55,7 @@ const Home: NextPageWithLayout = () => {
         </div>
         <div className="pt-11">
           <div className="background mb-11 flex justify-between align-middle">
-            <h1 className="flex items-center text-lg font-medium uppercase">
+            <h1 className="flex items-center text-lg font-medium uppercase text-black">
               NEWEST PRODUCTS
             </h1>
             <Link href="/products">
@@ -78,8 +78,8 @@ const Home: NextPageWithLayout = () => {
                         />
                       </figure>
                       <div className="card-body">
-                        <h3>Product name</h3>
-                        <h2>P 99.99</h2>
+                        <h3 className="text-black">Product name</h3>
+                        <h2 className="text-black">P 99.99</h2>
                       </div>
                     </a>
                   </Link>
@@ -91,7 +91,7 @@ const Home: NextPageWithLayout = () => {
         </div>
         <div className="py-11">
           <div className="background mb-11 flex justify-between align-middle">
-            <h1 className="flex items-center text-lg font-medium uppercase">
+            <h1 className="flex items-center text-lg font-medium uppercase text-black">
               PREORDERS
             </h1>
             <Link href="/products">
@@ -114,8 +114,8 @@ const Home: NextPageWithLayout = () => {
                         />
                       </figure>
                       <div className="card-body">
-                        <h3>Product name</h3>
-                        <h2>P 99.99</h2>
+                        <h3 className="text-black">Product name</h3>
+                        <h2 className="text-black">P 99.99</h2>
                       </div>
                     </a>
                   </Link>

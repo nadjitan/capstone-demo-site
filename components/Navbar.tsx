@@ -112,7 +112,7 @@ const Navbar: NextPage = () => {
             </label>
             <ul
               tabIndex={0}
-              className="dropdown-content menu w-52 rounded-none bg-base-100 p-2 shadow"
+              className="dropdown-content menu w-52 rounded-none bg-base-100 p-2 shadow text-black"
             >
               <li>
                 <Link href="/products">Albums</Link>
