@@ -32,8 +32,8 @@ const MainLayout: NextPage<{ children: ReactElement }> = ({ children }) => {
   return (
     <Surveyor
       lastData={{
-        url: `${host}/register`,
-        class: "srvyr-qVXLL8Xz",
+        url: `${host}/forgot-password`,
+        class: "srvyr-8V36GrPY",
       }}
       logClicks={record}
       locateMsg={"Register and account."}
