@@ -32,11 +32,11 @@ const MainLayout: NextPage<{ children: ReactElement }> = ({ children }) => {
   return (
     <Surveyor
       lastData={{
-        url: `${host}/login`,
-        class: "srvyr-2W3k7K3O",
+        url: `${host}/register`,
+        class: "srvyr-qVXLL8Xz",
       }}
       logClicks={record}
-      locateMsg={"Fill out form for signing in."}
+      locateMsg={"Register and account."}
       debug={!record}
       apiUrl={"https://capstone-api-theta.vercel.app/api/telemetry"}>
       <Navbar />
