@@ -14,7 +14,7 @@ const Products: NextPageWithLayout = () => {
       <div className="my-11 sm:px-28 xl:px-60">
         <div className="whitebg my-11 p-8">
           <div className="mb-11">
-            <h1 className="flex items-center text-lg font-medium uppercase">
+            <h1 className="flex items-center text-lg font-medium uppercase text-black">
               Products List
             </h1>
           </div>
@@ -24,7 +24,7 @@ const Products: NextPageWithLayout = () => {
               for (let i = 1; i <= 17; i++) {
                 productList.push(
                   <Link href="/item-page">
-                    <a className="card card-compact w-auto rounded-none bg-base-100 transition-all hover:drop-shadow-lg">
+                    <a className="card card-compact w-auto rounded-none bg-base-100 font-normal transition-all hover:drop-shadow-lg">
                       <figure>
                         <img
                           src="/product-image-placeholder.png"

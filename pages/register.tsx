@@ -13,7 +13,9 @@ const Register: NextPageWithLayout = () => {
       </Head>
       <div className="flex w-full justify-center">
         <div className="whitebg my-11 w-full p-8 sm:w-1/2 xl:w-1/3">
-          <h1 className="mb-4 text-lg font-medium uppercase">Register</h1>
+          <h1 className="mb-4 text-lg font-medium uppercase text-black">
+            Register
+          </h1>
           <div className="form-control w-full">
             <label className="label">
               <span className="label-text">Email</span>
@@ -48,14 +50,14 @@ const Register: NextPageWithLayout = () => {
               className="input input-bordered mb-4 w-full"
             />
             <div className="flex w-full justify-end">
-              <button className="btn w-full hover:text-secondary-content">
+              <button className="btn w-full font-normal hover:text-secondary-content">
                 Submit
               </button>
             </div>
           </div>
           <div className="mt-4 flex w-full justify-center">
             <Link href="/login">
-              <a className="link link-hover text-neutral-content">
+              <a className="link link-hover font-normal text-neutral-content">
                 Already have an account? Login here.
               </a>
             </Link>

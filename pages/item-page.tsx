@@ -22,13 +22,13 @@ const ItemPage: NextPageWithLayout = () => {
               <h4>PRODUCT NAME EXAMPLE</h4>
               <div className="divider m-0"></div>
               <h6>P 99.99</h6>
-              <p>
+              <p className="text-black">
                 Ut porttitor leo a diam sollicitudin tempor id eu nisl.
                 Consequat id porta nibh venenatis cras sed felis eget velit. Nec
                 feugiat in fermentum posuere. Semper feugiat nibh sed pulvinar
                 proin gravida hendrerit.
               </p>
-              <p>
+              <p className="text-black">
                 Id semper risus in hendrerit gravida. Lacus suspendisse faucibus
                 interdum posuere. Pellentesque diam volutpat commodo sed
                 egestas. Facilisis mauris sit amet massa vitae. Id consectetur
@@ -36,7 +36,7 @@ const ItemPage: NextPageWithLayout = () => {
               </p>
               <div className="divider m-0 mt-3"></div>
               <Link href="/cart">
-                <a className="btn btn-circle mt-4 w-44 gap-4 hover:text-secondary-content">
+                <a className="btn btn-circle mt-4 w-44 gap-4 font-normal hover:text-secondary-content">
                   Add to Cart
                 </a>
               </Link>
@@ -45,11 +45,11 @@ const ItemPage: NextPageWithLayout = () => {
         </div>
         <div className="whitebg mt-11 p-8">
           <div className="background mb-11 flex justify-between align-middle">
-            <h1 className="flex items-center text-lg font-medium uppercase">
+            <h1 className="flex items-center text-lg font-medium uppercase text-black">
               SIMILAR PRODUCTS
             </h1>
             <Link href="/products">
-              <a className="btn btn-circle w-44 gap-4 hover:text-secondary-content">
+              <a className="btn btn-circle w-44 gap-4 font-normal hover:text-secondary-content">
                 See More {">"}
               </a>
             </Link>
@@ -60,7 +60,7 @@ const ItemPage: NextPageWithLayout = () => {
               for (let i = 1; i <= 5; i++) {
                 productList.push(
                   <Link href="/item-page">
-                    <a className="card card-compact w-auto rounded-none bg-base-100 transition-all hover:drop-shadow-lg">
+                    <a className="card card-compact w-auto rounded-none bg-base-100 font-normal transition-all hover:drop-shadow-lg">
                       <figure>
                         <img
                           src="/product-image-placeholder.png"

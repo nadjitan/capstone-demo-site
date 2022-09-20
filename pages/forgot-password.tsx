@@ -8,12 +8,10 @@ import { NextPageWithLayout } from "./_app"
 const ForgotPassword: NextPageWithLayout = () => {
   return (
     <>
-      <Head>
-        <title>Forgot Password</title>
-      </Head>
+      <Head>Forgot Password</Head>
       <div className="flex w-full justify-center">
         <div className="whitebg my-11 w-full p-8 sm:w-1/2 xl:w-1/3">
-          <h1 className="mb-4 text-lg font-medium uppercase">
+          <h1 className="mb-4 text-lg font-medium uppercase text-black">
             Forgot Password
           </h1>
           <div className="form-control w-full">
@@ -26,14 +24,14 @@ const ForgotPassword: NextPageWithLayout = () => {
               className="input input-bordered mb-4 w-full"
             />
             <div className="flex w-full justify-end">
-              <button className="btn w-full hover:text-secondary-content">
+              <button className="btn w-full font-normal hover:text-secondary-content">
                 Submit
               </button>
             </div>
           </div>
           <div className="mt-4 flex w-full justify-center">
             <Link href="/login">
-              <a className="link link-hover text-neutral-content">
+              <a className="link link-hover font-normal text-neutral-content">
                 Back to login
               </a>
             </Link>

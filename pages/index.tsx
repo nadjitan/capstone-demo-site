@@ -19,11 +19,11 @@ const Home: NextPageWithLayout = () => {
       <div className="whitebg px-4 sm:px-28 xl:px-60">
         <div className="pt-11">
           <div className="background mb-11 flex justify-between align-middle">
-            <h1 className="flex items-center text-lg font-medium uppercase">
+            <h1 className="flex items-center text-lg font-medium uppercase text-black">
               HOTTEST PRODUCTS
             </h1>
             <Link href="/products">
-              <a className="btn btn-circle w-44 gap-4 hover:text-secondary-content">
+              <a className="btn btn-circle w-44 gap-4 font-normal hover:text-secondary-content">
                 See More {">"}
               </a>
             </Link>
@@ -34,7 +34,7 @@ const Home: NextPageWithLayout = () => {
               for (let i = 1; i <= 10; i++) {
                 productList.push(
                   <Link href="/item-page">
-                    <a className="card card-compact w-auto rounded-none bg-base-100 transition-all hover:drop-shadow-lg">
+                    <a className="card card-compact w-auto rounded-none bg-base-100 font-normal transition-all hover:drop-shadow-lg">
                       <figure>
                         <img
                           src="/product-image-placeholder.png"
@@ -55,11 +55,11 @@ const Home: NextPageWithLayout = () => {
         </div>
         <div className="pt-11">
           <div className="background mb-11 flex justify-between align-middle">
-            <h1 className="flex items-center text-lg font-medium uppercase">
+            <h1 className="flex items-center text-lg font-medium uppercase text-black">
               NEWEST PRODUCTS
             </h1>
             <Link href="/products">
-              <a className="btn btn-circle w-44 gap-4 hover:text-secondary-content">
+              <a className="btn btn-circle w-44 gap-4 font-normal hover:text-secondary-content">
                 See More {">"}
               </a>
             </Link>
@@ -70,7 +70,7 @@ const Home: NextPageWithLayout = () => {
               for (let i = 1; i <= 5; i++) {
                 productList.push(
                   <Link href="/item-page">
-                    <a className="card card-compact w-auto rounded-none bg-base-100 transition-all hover:drop-shadow-lg">
+                    <a className="card card-compact w-auto rounded-none bg-base-100 font-normal transition-all hover:drop-shadow-lg">
                       <figure>
                         <img
                           src="/product-image-placeholder.png"
@@ -91,11 +91,11 @@ const Home: NextPageWithLayout = () => {
         </div>
         <div className="py-11">
           <div className="background mb-11 flex justify-between align-middle">
-            <h1 className="flex items-center text-lg font-medium uppercase">
+            <h1 className="flex items-center text-lg font-medium uppercase text-black">
               PREORDERS
             </h1>
             <Link href="/products">
-              <a className="btn btn-circle w-44 gap-4 hover:text-secondary-content">
+              <a className="btn btn-circle w-44 gap-4 font-normal hover:text-secondary-content">
                 See More {">"}
               </a>
             </Link>
@@ -106,7 +106,7 @@ const Home: NextPageWithLayout = () => {
               for (let i = 1; i <= 5; i++) {
                 productList.push(
                   <Link href="/item-page">
-                    <a className="card card-compact w-auto rounded-none bg-base-100 transition-all hover:drop-shadow-lg">
+                    <a className="card card-compact w-auto rounded-none bg-base-100 font-normal transition-all hover:drop-shadow-lg">
                       <figure>
                         <img
                           src="/product-image-placeholder.png"
