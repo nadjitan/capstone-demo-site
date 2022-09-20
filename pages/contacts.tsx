@@ -29,10 +29,9 @@ const Contacts: NextPageWithLayout = () => {
             </label>
             <textarea
               className="textarea textarea-bordered mb-4 h-24 w-full"
-              placeholder="Your Message"
-            ></textarea>
+              placeholder="Your Message"></textarea>
             <div className="flex w-full justify-end">
-              <button className="btn w-32 hover:text-secondary-content">
+              <button className="btn w-32 font-normal hover:text-secondary-content">
                 Submit
               </button>
             </div>

@@ -37,29 +37,31 @@ const Navbar: NextPage = () => {
             </ul>
           </div>
           <Link href="/">
-            <a className="btn btn-primary text-xl normal-case hover:text-neutral-content">
+            <a className="btn btn-primary text-xl font-normal normal-case hover:text-neutral-content">
               DEMO SITE
             </a>
           </Link>
         </div>
         <div className="navbar hidden lg:flex">
           <Link href="/">
-            <a className="btn btn-primary hover:text-neutral-content">Home</a>
+            <a className="btn btn-primary font-normal hover:text-neutral-content">
+              Home
+            </a>
           </Link>
           <Link href="/products">
-            <a className="btn btn-primary hover:text-neutral-content">
+            <a className="btn btn-primary font-normal hover:text-neutral-content">
               Products
             </a>
           </Link>
           <Link href="/help">
-            <a className="ignore-css btn btn-primary hover:text-neutral-content ">
+            <a className="ignore-css btn btn-primary font-normal hover:text-neutral-content ">
               Need Help?
             </a>
           </Link>
         </div>
         <div className="navbar-end">
           <Link href="/cart">
-            <a className="btn btn-primary w-28 gap-2 hover:text-neutral-content">
+            <a className="btn btn-primary w-28 gap-2 font-normal hover:text-neutral-content">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6"
@@ -73,7 +75,7 @@ const Navbar: NextPage = () => {
             </a>
           </Link>
           <Link href="/login">
-            <a className="btn btn-circle w-44 gap-4 hover:text-secondary-content">
+            <a className="btn btn-circle w-44 gap-4 font-normal hover:text-secondary-content">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -91,7 +93,7 @@ const Navbar: NextPage = () => {
           <div className="dropdown">
             <label
               tabIndex={0}
-              className="btn no-animation m-1 w-52 gap-4 rounded-none hover:text-secondary-content">
+              className="btn no-animation m-1 w-52 gap-4 rounded-none font-normal hover:text-secondary-content">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6"
@@ -129,7 +131,7 @@ const Navbar: NextPage = () => {
             <input
               type="submit"
               value="Search"
-              className="background btn no-animation w-32 rounded-none rounded-r-full hover:text-secondary-content"
+              className="btn no-animation w-32 rounded-none rounded-r-full font-normal hover:text-secondary-content"
             />
           </div>
         </div>

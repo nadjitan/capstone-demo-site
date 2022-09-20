@@ -23,7 +23,7 @@ const Home: NextPageWithLayout = () => {
               HOTTEST PRODUCTS
             </h1>
             <Link href="/products">
-              <a className="btn btn-circle w-44 gap-4 hover:text-secondary-content">
+              <a className="btn btn-circle w-44 gap-4 font-normal hover:text-secondary-content">
                 See More {">"}
               </a>
             </Link>
@@ -34,7 +34,7 @@ const Home: NextPageWithLayout = () => {
               for (let i = 1; i <= 10; i++) {
                 productList.push(
                   <Link href="/item-page">
-                    <a className="card card-compact w-auto rounded-none bg-base-100 transition-all hover:drop-shadow-lg">
+                    <a className="card card-compact w-auto rounded-none bg-base-100 font-normal transition-all hover:drop-shadow-lg">
                       <figure>
                         <img
                           src="/product-image-placeholder.png"
@@ -42,8 +42,8 @@ const Home: NextPageWithLayout = () => {
                         />
                       </figure>
                       <div className="card-body">
-                        <h3 className="text-black">Product name</h3>
-                        <h2 className="text-black">P 99.99</h2>
+                        <h3>Product name</h3>
+                        <h2>P 99.99</h2>
                       </div>
                     </a>
                   </Link>
@@ -59,7 +59,7 @@ const Home: NextPageWithLayout = () => {
               NEWEST PRODUCTS
             </h1>
             <Link href="/products">
-              <a className="btn btn-circle w-44 gap-4 hover:text-secondary-content">
+              <a className="btn btn-circle w-44 gap-4 font-normal hover:text-secondary-content">
                 See More {">"}
               </a>
             </Link>
@@ -70,7 +70,7 @@ const Home: NextPageWithLayout = () => {
               for (let i = 1; i <= 5; i++) {
                 productList.push(
                   <Link href="/item-page">
-                    <a className="card card-compact w-auto rounded-none bg-base-100 transition-all hover:drop-shadow-lg">
+                    <a className="card card-compact w-auto rounded-none bg-base-100 font-normal transition-all hover:drop-shadow-lg">
                       <figure>
                         <img
                           src="/product-image-placeholder.png"
@@ -78,8 +78,8 @@ const Home: NextPageWithLayout = () => {
                         />
                       </figure>
                       <div className="card-body">
-                        <h3 className="text-black">Product name</h3>
-                        <h2 className="text-black">P 99.99</h2>
+                        <h3>Product name</h3>
+                        <h2>P 99.99</h2>
                       </div>
                     </a>
                   </Link>
@@ -95,7 +95,7 @@ const Home: NextPageWithLayout = () => {
               PREORDERS
             </h1>
             <Link href="/products">
-              <a className="btn btn-circle w-44 gap-4 hover:text-secondary-content">
+              <a className="btn btn-circle w-44 gap-4 font-normal hover:text-secondary-content">
                 See More {">"}
               </a>
             </Link>
@@ -106,7 +106,7 @@ const Home: NextPageWithLayout = () => {
               for (let i = 1; i <= 5; i++) {
                 productList.push(
                   <Link href="/item-page">
-                    <a className="card card-compact w-auto rounded-none bg-base-100 transition-all hover:drop-shadow-lg">
+                    <a className="card card-compact w-auto rounded-none bg-base-100 font-normal transition-all hover:drop-shadow-lg">
                       <figure>
                         <img
                           src="/product-image-placeholder.png"
@@ -114,8 +114,8 @@ const Home: NextPageWithLayout = () => {
                         />
                       </figure>
                       <div className="card-body">
-                        <h3 className="text-black">Product name</h3>
-                        <h2 className="text-black">P 99.99</h2>
+                        <h3>Product name</h3>
+                        <h2>P 99.99</h2>
                       </div>
                     </a>
                   </Link>

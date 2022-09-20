@@ -85,7 +85,7 @@ const Cart: NextPageWithLayout = () => {
           </div>
           <div className="divider m-0 mb-2"></div>
           <Link href="/checkout">
-            <a className="btn btn-circle w-full gap-4 hover:text-secondary-content">
+            <a className="btn btn-circle w-full gap-4 font-normal hover:text-secondary-content">
               PROCEED TO CHECKOUT
             </a>
           </Link>

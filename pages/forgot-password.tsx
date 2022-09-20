@@ -24,14 +24,14 @@ const ForgotPassword: NextPageWithLayout = () => {
               className="input input-bordered mb-4 w-full"
             />
             <div className="flex w-full justify-end">
-              <button className="btn w-full hover:text-secondary-content">
+              <button className="btn w-full font-normal hover:text-secondary-content">
                 Submit
               </button>
             </div>
           </div>
           <div className="mt-4 flex w-full justify-center">
             <Link href="/login">
-              <a className="link link-hover text-neutral-content">
+              <a className="link link-hover font-normal text-neutral-content">
                 Back to login
               </a>
             </Link>

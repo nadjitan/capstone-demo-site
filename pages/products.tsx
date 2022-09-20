@@ -24,7 +24,7 @@ const Products: NextPageWithLayout = () => {
               for (let i = 1; i <= 17; i++) {
                 productList.push(
                   <Link href="/item-page">
-                    <a className="card card-compact w-auto rounded-none bg-base-100 transition-all hover:drop-shadow-lg">
+                    <a className="card card-compact w-auto rounded-none bg-base-100 font-normal transition-all hover:drop-shadow-lg">
                       <figure>
                         <img
                           src="/product-image-placeholder.png"
@@ -32,8 +32,8 @@ const Products: NextPageWithLayout = () => {
                         />
                       </figure>
                       <div className="card-body">
-                        <h3 className="text-black">Product name</h3>
-                        <h2 className="text-black">P 99.99</h2>
+                        <h3>Product name</h3>
+                        <h2>P 99.99</h2>
                       </div>
                     </a>
                   </Link>

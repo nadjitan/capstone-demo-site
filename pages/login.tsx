@@ -34,21 +34,21 @@ const Login: NextPageWithLayout = () => {
               className="input input-bordered mb-4 w-full"
             />
             <div className="flex w-full justify-end">
-              <button className="btn w-full hover:text-secondary-content">
+              <button className="btn w-full font-normal hover:text-secondary-content">
                 Submit
               </button>
             </div>
           </div>
           <div className="mt-4 flex w-full justify-center">
             <Link href="/register">
-              <a className="link link-hover text-neutral-content">
+              <a className="link link-hover font-normal text-neutral-content">
                 New member? Register here!
               </a>
             </Link>
           </div>
           <div className="flex w-full justify-center">
             <Link href="/forgot-password">
-              <a className="link link-hover text-neutral-content">
+              <a className="link link-hover font-normal text-neutral-content">
                 Forgot Password?
               </a>
             </Link>
