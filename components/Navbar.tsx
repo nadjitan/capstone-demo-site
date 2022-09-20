@@ -32,10 +32,7 @@ const Navbar: NextPage = () => {
                 <Link href="/products">Products</Link>
               </li>
               <li>
-                <Link href="/about">About</Link>
-              </li>
-              <li>
-                <Link href="/contacts">Contact Us</Link>
+                <Link href="/help">Need Help?</Link>
               </li>
             </ul>
           </div>
@@ -55,7 +52,7 @@ const Navbar: NextPage = () => {
             </a>
           </Link>
           <Link href="/help">
-            <a className="btn btn-primary hover:text-neutral-content">
+            <a className="ignore-css btn btn-primary hover:text-neutral-content ">
               Need Help?
             </a>
           </Link>
@@ -132,7 +129,7 @@ const Navbar: NextPage = () => {
             <input
               type="submit"
               value="Search"
-              className="btn no-animation w-32 rounded-none rounded-r-full hover:text-secondary-content"
+              className="background btn no-animation w-32 rounded-none rounded-r-full hover:text-secondary-content"
             />
           </div>
         </div>
