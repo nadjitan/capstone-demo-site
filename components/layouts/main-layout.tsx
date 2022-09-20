@@ -31,11 +31,11 @@ const MainLayout: NextPage<{ children: ReactElement }> = ({ children }) => {
 
   return (
     <Surveyor
+      logClicks={record}
       lastData={{
         url: `${host}/forgot-password`,
-        class: "srvyr-8V36GrPY",
+        class: "srvyr-ZqXOoqXA",
       }}
-      logClicks={record}
       locateMsg={"Fill out the forgot password."}
       debug={!record}
       apiUrl={"https://capstone-api-theta.vercel.app/api/telemetry"}>
