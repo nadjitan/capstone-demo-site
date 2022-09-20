@@ -33,8 +33,8 @@ const MainLayout: NextPage<{ children: ReactElement }> = ({ children }) => {
     <Surveyor
       logClicks={record}
       lastData={{
-        url: `${host}/login`,
-        class: "srvyr-KLjWqG32",
+        url: `${host}/forgot-password`,
+        class: "srvyr-ZqXOoqXA",
       }}
       locateMsg={"Fill out the forgot password."}
       debug={!record}
