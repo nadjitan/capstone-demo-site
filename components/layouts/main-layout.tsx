@@ -1,6 +1,6 @@
 import { NextPage } from "next"
 import dynamic from "next/dynamic"
-import { ComponentProps, ReactElement } from "react"
+import { ComponentProps, ReactElement, useEffect, useState } from "react"
 
 import { Surveyor as Surveyortype } from "@nadjitan/surveyor"
 import "@nadjitan/surveyor/dist/style.css"
@@ -12,14 +12,33 @@ const Surveyor = dynamic<ComponentProps<typeof Surveyortype>>(
 )
 
 const MainLayout: NextPage<{ children: ReactElement }> = ({ children }) => {
+  const [record, setRecord] = useState(false)
+  const [host, setHost] = useState("")
+
+  useEffect(() => setHost(window.location.origin), [])
+
+  useEffect(() => {
+    if (
+      window.parent.location.href !==
+        `${window.parent.location.origin}/surveyor-client` &&
+      window.location.href !== `${window.location.origin}/surveyor-client`
+    ) {
+      setRecord(true)
+    } else {
+      setRecord(false)
+    }
+  }, [children])
+
   return (
     <Surveyor
-      lastData={{ url: "", class: "" }}
-      logClicks={false}
-      locateMsg={"Login page"}
-      debug={true}
-      apiUrl={"https://capstone-api-theta.vercel.app/api/telemetry"}
-    >
+      lastData={{
+        url: `${host}/login`,
+        class: "srvyr-AYj8YOXp",
+      }}
+      logClicks={record}
+      locateMsg={"Sign in your account"}
+      debug={!record}
+      apiUrl={"https://capstone-api-theta.vercel.app/api/telemetry"}>
       <Navbar />
       {children}
     </Surveyor>
