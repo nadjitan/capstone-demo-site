@@ -1,13 +1,15 @@
-import { initSurveyor } from "@nadjitan/surveyor"
 import Head from "next/head"
 import Link from "next/link"
-import { ReactElement, useEffect } from "react"
+import { ReactElement } from "react"
 import MainLayout from "../components/layouts/main-layout"
 import { NextPageWithLayout } from "./_app"
 
 const ItemPage: NextPageWithLayout = () => {
   return (
     <>
+      <Head>
+        <title>Product</title>
+      </Head>
       <div className="my-11 px-4 sm:px-28 xl:px-60">
         <div className="card card-side w-full rounded-none bg-white p-8">
           <figure>
@@ -21,7 +23,7 @@ const ItemPage: NextPageWithLayout = () => {
             <div className="flex w-full flex-col">
               <h4>PRODUCT NAME EXAMPLE</h4>
               <div className="divider m-0"></div>
-              <h6>P 99.99</h6>
+              <h6 className="text-3xl">P 99.99</h6>
               <p className="text-black">
                 Ut porttitor leo a diam sollicitudin tempor id eu nisl.
                 Consequat id porta nibh venenatis cras sed felis eget velit. Nec

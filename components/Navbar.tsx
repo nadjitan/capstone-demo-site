@@ -75,7 +75,7 @@ const Navbar: NextPage = () => {
             </a>
           </Link>
           <Link href="/login">
-            <a className="btn btn-circle w-44 gap-4 font-normal hover:text-secondary-content">
+            <a className="btn btn-circle w-44 gap-3 font-normal hover:text-secondary-content">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -128,11 +128,9 @@ const Navbar: NextPage = () => {
                 className="input input-bordered rounded-none rounded-l-full"
               />
             </div>
-            <input
-              type="submit"
-              value="Search"
-              className="btn no-animation w-32 rounded-none rounded-r-full font-normal hover:text-secondary-content"
-            />
+            <button className="btn no-animation w-32 rounded-none rounded-r-full bg-theme-primary font-normal text-theme-secondary hover:text-secondary-content">
+              Search
+            </button>
           </div>
         </div>
       </div>

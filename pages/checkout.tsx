@@ -1,7 +1,5 @@
-import { initSurveyor } from "@nadjitan/surveyor"
 import Head from "next/head"
-import Link from "next/link"
-import { ReactElement, useEffect } from "react"
+import { ReactElement } from "react"
 import MainLayout from "../components/layouts/main-layout"
 import { NextPageWithLayout } from "./_app"
 

@@ -12,9 +12,7 @@ const Client = dynamic<ComponentProps<typeof ClientType>>(
 
 const SurveyorClient: NextPage = () => {
   return (
-    <Client
-      apiUrl={"https://capstone-api-theta.vercel.app/api/surveyor"}
-    />
+    <Client apiUrl={"https://capstone-api-theta.vercel.app/api/surveyor"} />
   )
 }
 
